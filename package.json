@@ -1,7 +1,7 @@
 {
-  "name": "Cayman",
+  "name": "Lue Fan's Home Page",
   "version": "1.0.0",
-  "homepage": "http://github.com/jasonlong/cayman-theme",
+  "homepage": "lue.fan",
   "author": "Jason Long",
   "scss": "./scss/cayman.scss",
   "devDependencies": {
