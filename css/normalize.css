@@ -423,7 +423,7 @@ th {
   padding: 0;
 }
 
-body,
+/* body,
 td,
 th,
 tr,
@@ -431,7 +431,7 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px
-}
+} */
 
 .one {
   /* width: 16px;
