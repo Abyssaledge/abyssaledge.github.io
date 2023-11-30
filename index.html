@@ -21,7 +21,9 @@
         I am currently a Ph.D. student in CRIPAC, NLPR, Institute of Automation, Chinese Academy of Sciences, supervised by Prof. Zhaoxiang Zhang.
         I am also an intern at TuSimple supervised by Dr. Naiyan Wang and Dr. Feng Wang from May 2020 to April 2023.
         I got my bachelor's degree from Xi'an Jiaotong University (XJTU) in 2019, majoring in automation.
-        My research interests focus on the perception algorithm in autonomous driving scenarios.
+      </p>
+      <p>
+        My research interests focus on the perception algorithm in autonomous driving scenarios. My representive research lies in a series of algorithms for <b>LiDAR-based fully sparse detection</b>, supporting the super long-range perception and enhancing the driving safety.
         <ul>
           <li> <a href="https://scholar.google.com/citations?user=6ZzmkHEAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> </li>
           <li> <a href="https://github.com/Abyssaledge">GitHub</a> </li>
@@ -29,41 +31,183 @@
       </p>
       <h1 style="color:black;">Publications</h1>
       <p>*: Equal Contribution; &dagger;: Corresponding Author</p>
-      <ul>
-        <li> <a href="https://arxiv.org/abs/2311.17918">Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving</a>.
-        <br>Yuqi Wang*, Jiawei He*, <b>Lue Fan*</b>, Hongxin Li*, Yuntao Chen&dagger;, Zhaoxiang Zhang&dagger;.
-        </li>
         
-        <li> <a href="https://arxiv.org/abs/2308.03755">FSD V2: Improving Fully Sparse 3D Object Detection with Virtual Voxels</a>.
-        <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
-        </li>
+
+      <table style="width:100%;border:0px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <!-- Drive-WM -->
+      <tr onmouseout="wm_stop()" onmouseover="wm_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='wm_image'><img src="images/wm_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2311.17918">Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving</a></papertitle>
+          
+          <br>Yuqi Wang*, Jiawei He*, <b>Lue Fan*</b>, Hongxin Li*, Yuntao Chen&dagger;, Zhaoxiang Zhang&dagger;.
+          <br>
+          <a href="https://github.com/BraveGroup/Drive-WM">Code</a>
+          /
+          <a href="https://drive-wm.github.io">Project Page</a>
+          <p></p>
+          <p>
+            Drive-WM is the first multi-view world model for planning in autonomous driving. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSDv2 -->
+      <tr onmouseout="fsdv2_stop()" onmouseover="fsdv2_start()" height="200px">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsdv2_image'><img src="images/fsdv2_teaser.png" style="width:140%;height:100%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2308.03755">FSD V2: Improving Fully Sparse 3D Object Detection with Virtual Voxels</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSDv2 is an improved version of FSD, removing the handcrafted heuristics in FSD. FSDv2 achieves strong performance in Waymo, nuScenes, and Argoverse 2 dataset, and are fully open-sourced!
+          </p>
+        </td>
+      </tr>
+
+      <!-- CTRL -->
+      <tr onmouseout="ctrl_stop()" onmouseover="ctrl_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='ctrl_image'><img src="images/ctrl_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2304.12315v1">Once Detected, Never Lost: Surpassing Human Performance in Offline LiDAR based 3D Object Detection (CTRL)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Yuxue Yang, Yiming Mao, Feng Wang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <b><em>ICCV, <FONT COLOR="#FF0000">Oral</FONT></em>, 2023 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            CTRL is the first open-sourced LiDAR-based 3D object autolabeling system, surpassing the performance of human annotators!
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSF -->
+      <tr onmouseout="fsf_stop()" onmouseover="fsf_start()" height="200px">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsf_image'><img src="images/fsf_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2304.12310v2">Fully Sparse Fusion for 3D Object Detection (FSF)</a></papertitle>
+          
+          <br>Yingyan Li, <b>Lue Fan</b>, Yang Liu, Zehao Huang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang, Tieniu Tan
+          <br>
+          <a href="https://github.com/BraveGroup/FullySparseFusion">Code</a>
+          <p></p>
+          <p>
+            FSF explores multi-modal 3D object detection with fully sparse architecture by seamlessly integrating 2D instance segmentation and 3D instance segmentaion in a unified framework.
+          </p>
+        </td>
+      </tr>
         
-        <li> <a href="https://arxiv.org/abs/2304.12315v1">Once Detected, Never Lost: Surpassing Human Performance in Offline LiDAR based 3D Object Detection (CTRL)</a>.  <b> ICCV 2023 Oral</b>.
-        <br><b>Lue Fan</b>, Yuxue Yang, Yiming Mao, Feng Wang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang.
-        </li>
-        
-        <li> <a href="https://arxiv.org/abs/2304.12310v2">Fully Sparse Fusion for 3D Object Detection (FSF)</a>.
-        <br>Yingyan Li, <b>Lue Fan</b>, Yang Liu, Zehao Huang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang, Tieniu Tan
-        </li>
-        
-        <li> <a href="https://arxiv.org/abs/2301.02562">Super Sparse 3D Object Detection (FSD++)</a>. <b> TPAMI 2023</b>.
-        <br><b>Lue Fan</b>, Yuxue Yang, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
-        </li>
-        
-      <li> <a href="https://arxiv.org/abs/2207.10035">Fully Sparse 3D Object Detection</a>. <b> NeurIPS 2022</b>.
-        <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang. 
-         [<a href="660_fully_sparse_3d_object_detection.pdf">PDF</a>]
-        </li>
-        
-      <li> <a href="https://arxiv.org/abs/2112.06375">Embracing Single Stride 3D Object Detector with Sparse Transformer (SST)</a>. <b>CVPR 2022</b>.
-        <br><b>Lue Fan</b>, Ziqi Pang, Tianyuan Zhang, Yu-Xiong Wang, Hang Zhao, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
-        </li>
-        
-      <li> <a href="https://arxiv.org/abs/2103.10039">RangeDet: In Defense of Range View for Lidar-based 3D Object Detection</a>. <b>ICCV 2021</b>.
-       <br> <b>Lue Fan</b>*, Xuan Xiong*, Feng Wang, Naiyan Wang, Zhaoxiang Zhang. 
-        </li>
-        
-      </ul>
+
+      <!-- FSD++ -->
+      <tr onmouseout="fsdpp_stop()" onmouseover="fsdpp_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsdpp_image'><img src="images/fsdpp_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2301.02562">Super Sparse 3D Object Detection (FSD++)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Yuxue Yang, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>TPAMI</em>, 2023 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSD++ extends FSD into the multi-frame setting. In addition to the spatial sparsity, FSD++ emphaiszes temporal sparsity.
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSD -->
+      <tr onmouseout="fsd_stop()" onmouseover="fsd_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsd_image'><img src="images/fsd_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2207.10035">Fully Sparse 3D Object Detection (FSD)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>NeurIPS</em>, 2022 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSD first proposes the concept of LiDAR-based <b><FONT COLOR="#FF0000">"fully sparse detection"</FONT></b>, achieving state-of-the-art performance in both conventional benchmark and long-range (>200m) LiDAR detection benchmark.
+          </p>
+        </td>
+      </tr>
+
+      <!-- SST -->
+      <tr onmouseout="sst_stop()" onmouseover="sst_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='sst_image'><img src="images/sst_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2112.06375">Embracing Single Stride 3D Object Detector with Sparse Transformer (SST)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Ziqi Pang, Tianyuan Zhang, Yu-Xiong Wang, Hang Zhao, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>CVPR</em>, 2022 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            SST emphasize the <em>small object sizes</em> and <em>sparsity</em> of point clouds. Its sparse transformers enlight new backbones for outdoor LiDAR-based detection. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- rangdet -->
+      <tr onmouseout="rangdet_stop()" onmouseover="rangdet_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='rangedet_image'><img src="images/rangedet_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2103.10039">RangeDet: In Defense of Range View for Lidar-based 3D Object Detection</a></papertitle>
+          
+          <br><b>Lue Fan*</b>, Xuan Xiong*, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <b><em>ICCV</em>, 2021 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/RangeDet">Code</a>
+          <p></p>
+          <p>
+            RangeDet greatly narrows the performance gap between range view based LiDAR detection and voxel/BEV based LiDAR detection.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
       <h1 style="color:black;">Contact</h1>
       <ul>
         <li> Email: fanlue2019@ia.ac.cn </li>
@@ -77,7 +221,7 @@
       -->
 
       <footer class="site-footer">
-         <a href='https://dissertation-writingservice.com/'>dissertation-writingservice.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=53afde0b53297eb53371cb1fba8bb4d0e6fd13e7'></script>
+         <a href='https://dissertation-writingservice.com/'>Every end is a new beginning.</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=53afde0b53297eb53371cb1fba8bb4d0e6fd13e7'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/963478/t/9"></script>
       </footer>
 
