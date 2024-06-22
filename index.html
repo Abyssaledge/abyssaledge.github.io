@@ -29,31 +29,72 @@
           <li> <a href="https://github.com/Abyssaledge">GitHub</a> </li>
         </ul>
       </p>
-      <h1 style="color:black;">Research Projects</h1>
+      <h1 style="color:black;">Selected Work</h1>
       <p>*: Equal Contribution; &dagger;: Corresponding Author</p>
         
 
       <table style="width:100%;border:0px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;font-size:14px;"><tbody>
-      <!-- MixSup -->
-      <tr onmouseout="mixsup_stop()" onmouseover="mixsup_start()">
+
+      <!-- TrimGS -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
         <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
           <div class="one">
-            <div class="two" id='wm_image'><img src="images/mixsup_teaser.png" style="width:140%;height:120%"></div>
+            <div class="two" id='trimgs_image'><img src="images/trimgs_teaser.png" style="width:140%;height:120%"></div>
           </div>
         </td>
         <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
-          <papertitle><a href="https://arxiv.org/abs/2401.16305">MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection</a></papertitle>
+          <papertitle><a href="https://arxiv.org/abs/2406.07499">Trim 3D Gaussian Splatting for Accurate Geometry Representation</a></papertitle>
           
-          <br>Yuxue Yang, <b>Lue Fan&dagger;</b>, Zhaoxiang Zhang&dagger;.
+          <br><b>Lue Fan*</b>, Yuxue Yang*, Minxing Li, Hongsheng Li&dagger;, Zhaoxiang Zhang&dagger;.
           <br>
-          <b><em>ICLR</em>, 2024 &nbsp </b>
-          <a href="https://github.com/BraveGroup/PointSAM-for-MixSup">Code</a>
-          <p></p>
+          <a href="https://github.com/YuxueYang1204/TrimGS">Code (fully released!)</a>,
+          <a href="https://trimgs.github.io/">Project Page</a>
           <p>
-            MixSup achieves strong performance with a few accurate box labels and cheap cluster labels.  <b>PointSAM</b> is developed to generate cluster labels. It achieve on-par performance with SoTA 3D segmentation methods in nuScenes <b>without any 3D annotations</b>!
+            We propose contribution-based trimming strategy to refine messy Gaussians to be geometrically accurate. This strategy has a potential to be integrated with any Gaussians!
           </p>
         </td>
       </tr>
+
+      <!-- LAW -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='law_image'><img src="images/law_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.08481">Enhancing End-to-End Autonomous Driving with Latent World Model</a></papertitle>
+          
+          <br>Yingyan Li, <b>Lue Fan</b>, Jiawei He, Yuqi Wang, Yuntao Chen, Zhaoxiang Zhang, Tieniu Tan.
+          <br>
+          <a href="https://github.com/BraveGroup/LAW">Code (stay tuned)</a>
+          <p></p>
+          <p>
+            We propose a practical <b>LA</b>tent <b>W</b>orld Model (LAW) to enhance end-to-end autonomous driving in a self-supervised manner <b>without</b> leveraging time-consuming video generation, achieving strong and <b>realtime</b> performance in both <b>open-loop and close-loop</b> benchamrks. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- VoxelMamba -->
+      <tr onmouseout="voxelmamba_stop()" onmouseover="voxelmamba_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='voxelmamba_image'><img src="images/voxelmamba_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.10700">Voxel Mamba: Group-Free State Space Models for Point Cloud based 3D Object Detection</a></papertitle>
+          
+          <br>Guowen Zhang, <b>Lue Fan</b>, Chenhang He, Zhen Lei, Zhaoxiang Zhang, Lei Zhang.
+          <br>
+          <a href="https://github.com/gwenzhang/Voxel-Mamba">Code (coming soon)</a>
+          <p></p>
+          <p>
+            The first voxel-based state space model for LiDAR-based 3D object detection in driving scenes, achiving state-of-the-art performance in <b>both Waymo and nuScene benchmarks</b>. 
+          </p>
+        </td>
+      </tr>
+
       <!-- Drive-WM -->
       <tr onmouseout="wm_stop()" onmouseover="wm_start()">
         <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
@@ -74,6 +115,27 @@
           <p></p>
           <p>
             Drive-WM is the first multi-view world model for planning in autonomous driving. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- MixSup -->
+      <tr onmouseout="mixsup_stop()" onmouseover="mixsup_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='wm_image'><img src="images/mixsup_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2401.16305">MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection</a></papertitle>
+          
+          <br>Yuxue Yang, <b>Lue Fan&dagger;</b>, Zhaoxiang Zhang&dagger;.
+          <br>
+          <b><em>ICLR</em>, 2024 &nbsp </b>
+          <a href="https://github.com/BraveGroup/PointSAM-for-MixSup">Code</a>
+          <p></p>
+          <p>
+            MixSup achieves strong performance with a few accurate box labels and cheap cluster labels.  <b>PointSAM</b> is developed to generate cluster labels. It achieve on-par performance with SoTA 3D segmentation methods in nuScenes <b>without any 3D annotations</b>!
           </p>
         </td>
       </tr>
@@ -246,9 +308,19 @@
          <a href='https://dissertation-writingservice.com/'>Every end is a new beginning.</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=53afde0b53297eb53371cb1fba8bb4d0e6fd13e7'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/963478/t/9"></script>
       </footer> -->
-      <footer class="site-footer">
-         <a href='https://dissertation-writingservice.com/'>dissertation-writingservice.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=53afde0b53297eb53371cb1fba8bb4d0e6fd13e7'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/963478/t/9"></script>
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <script type="text/javascript" src="https://www.free-counters.org/count/frj4"></script><br>
+              </div>
+            </div>
+      
+          </div>
+        </div>
       </footer>
 
     </section>
