@@ -18,12 +18,11 @@
     <section class="main-content">
       <h1 style="color:black;">About Me</h1>
       <p style="font-size: 14px;">
-        I got my Ph.D. degree from NLPR, Institute of Automation, Chinese Academy of Sciences in June 2024, supervised by Prof. Zhaoxiang Zhang.
-        I was an intern at TuSimple developing perception algorithm for autonomous trucks from May 2020 to April 2023, supervised by Dr. Naiyan Wang and Dr. Feng Wang.
-        I got my bachelor's degree from Xi'an Jiaotong University (XJTU) in 2019, majoring in automation.
+        I am currently an assistant professor in NLPR, Institute of Automation, Chinese Academy of Sciences. I got my Ph.D. degree from this lab in June 2024, supervised by Prof. Zhaoxiang Zhang, and bachelor's degree from Xi'an Jiaotong University (XJTU) in 2019, majoring in automation.
+        I was an research intern at TuSimple developing perception algorithm for autonomous trucks from May 2020 to April 2023, supervised by Dr. Naiyan Wang and Dr. Feng Wang.
       </p>
       <p style="font-size: 14px;">
-        My research interests focus on the <b>perception/decision/simulation</b> algorithms in autonomous driving scenarios. My representive research lies in a series of algorithms for <b>LiDAR-based fully sparse detection</b>, supporting the super long-range perception and enhancing the driving safety.
+        My research interests focus on the <b>perception/decision/simulation</b> algorithms in autonomous driving scenarios. During Ph.D., my representive research lies in a series of algorithms for <b>LiDAR-based fully sparse detection</b>, supporting the super long-range perception and enhancing the driving safety. Currently, I am mainly focusing on driving simulation and work closely with Prof. Hongsheng Li @ MMLab.
         <ul>
           <li> <a href="https://scholar.google.com/citations?user=6ZzmkHEAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> </li>
           <li> <a href="https://github.com/Abyssaledge">GitHub</a> </li>
@@ -47,12 +46,35 @@
           
           <br><b>Lue Fan*</b>, Hao Zhang*, Qitai Wang, Hongsheng Li&dagger;, Zhaoxiang Zhang&dagger;.
           <br>
+          <b><em>CVPR</em> 2025 &nbsp </b>
+          <br>
           <a href="https://drive-sim.github.io/freesim">Project Page</a>
           <p>
-            After FreeVS, we propose <b>FreeSim</b>, a hybrid method of <b>generation and reconstruction</b>, taking a further step toward a free-viewpoint driving camera simulation and enabling real-time rendering on free trajectories.
+            After FreeVS and FlexDrive, we propose <b>FreeSim</b>, a <b>generation-reconstruction</b> hybrid method for free-viewpoint camera simulation, taking the best of two worlds!
           </p>
         </td>
       </tr>
+
+      <!-- FlexDrive -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='flexdrive_image'><img src="images/flexdrive.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2502.21093">FlexDrive: Toward Trajectory Flexibility in Driving Scene Reconstruction and
+            Rendering</a></papertitle>
+          
+          <br>Jingqiu Zhou*, <b>Lue Fan*</b>, Linjiang Huang, Xiaoyu Shi, Si Liu, Z. Zhang&dagger;, Hongsheng Li&dagger;.
+          <br>
+          <b><em>CVPR</em> 2025 &nbsp </b>
+          <br>
+            After FreeVS, we propose <b>FlexDrive</b>, a purely geometry-driven method for novel-trajectory camera simulation in driving scenes.
+          </p>
+        </td>
+      </tr>
+
       <!-- FreeVS -->
       <tr onmouseout="law_stop()" onmouseover="law_start()">
         <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
@@ -66,9 +88,32 @@
           
           <br>Qitai Wang, <b>Lue Fan</b>, Yuqi Wang, Yuntao Chen&dagger;, Zhaoxiang Zhang&dagger;.
           <br>
+          <b><em>ICLR</em> 2025 &nbsp </b>
+          <br>
           <a href="https://freevs24.github.io/">Project Page</a>
           <p>
-            <b>FreeVS</b> is the first method that supports high-quality <b>generative</b> view synthesis on (almost) <b>free driving trajectory</b>, which is a crucial feature for a pratical driving simulator.
+            <b>FreeVS</b> is the first method that supports high-quality <b>generative</b> view synthesis on <b>free driving trajectory</b>, which is a crucial feature for driving simulators.
+          </p>
+        </td>
+      </tr>
+
+      <!-- LAW -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='law_image'><img src="images/law_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.08481">Enhancing End-to-End Autonomous Driving with Latent World Model</a></papertitle>
+          
+          <br>Yingyan Li, <b>Lue Fan</b>, Jiawei He, Yuqi Wang, Yuntao Chen, Zhaoxiang Zhang, Tieniu Tan.
+          <br>
+          <b><em>ICLR</em> 2025 &nbsp </b>
+          <a href="https://github.com/BraveGroup/LAW">Code </a>
+          <p></p>
+          <p>
+            We propose a practical <b>LA</b>tent <b>W</b>orld Model (LAW) to enhance end-to-end autonomous driving in a self-supervised manner <b>without</b> leveraging time-consuming video generation, achieving strong and <b>realtime</b> performance in both <b>open-loop and close-loop</b> benchamrks. 
           </p>
         </td>
       </tr>
@@ -93,25 +138,6 @@
         </td>
       </tr>
 
-      <!-- LAW -->
-      <tr onmouseout="law_stop()" onmouseover="law_start()">
-        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
-          <div class="one">
-            <div class="two" id='law_image'><img src="images/law_teaser.png" style="width:140%;height:120%"></div>
-          </div>
-        </td>
-        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
-          <papertitle><a href="https://arxiv.org/abs/2406.08481">Enhancing End-to-End Autonomous Driving with Latent World Model</a></papertitle>
-          
-          <br>Yingyan Li, <b>Lue Fan</b>, Jiawei He, Yuqi Wang, Yuntao Chen, Zhaoxiang Zhang, Tieniu Tan.
-          <br>
-          <a href="https://github.com/BraveGroup/LAW">Code (stay tuned)</a>
-          <p></p>
-          <p>
-            We propose a practical <b>LA</b>tent <b>W</b>orld Model (LAW) to enhance end-to-end autonomous driving in a self-supervised manner <b>without</b> leveraging time-consuming video generation, achieving strong and <b>realtime</b> performance in both <b>open-loop and close-loop</b> benchamrks. 
-          </p>
-        </td>
-      </tr>
 
       <!-- VoxelMamba -->
       <tr onmouseout="voxelmamba_stop()" onmouseover="voxelmamba_start()">
@@ -125,6 +151,7 @@
           
           <br>Guowen Zhang, <b>Lue Fan</b>, Chenhang He, Zhen Lei, Zhaoxiang Zhang, Lei Zhang.
           <br>
+          <b><em>NeurIPS</em> 2024 &nbsp </b>
           <a href="https://github.com/gwenzhang/Voxel-Mamba">Code</a>
           <p></p>
           <p>
