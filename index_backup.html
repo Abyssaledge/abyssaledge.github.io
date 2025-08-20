@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lue Fan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cayman.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name" style="font-size: 30px;">Lue Fan (范略)</h1>
+      <h2 class="project-tagline">Welcome to Lue Fan's Home Page.</h2>
+    </section>
+
+    <section class="main-content">
+      <h1 style="color:black;">About Me</h1>
+      <p style="font-size: 14px;">
+        I am currently an assistant professor in NLPR, Institute of Automation, Chinese Academy of Sciences. I got my Ph.D. degree from this lab in June 2024, supervised by Prof. Zhaoxiang Zhang, and bachelor's degree from Xi'an Jiaotong University (XJTU) in 2019, majoring in automation.
+        I was an research intern at TuSimple developing perception algorithm for autonomous trucks from May 2020 to April 2023, supervised by Dr. Naiyan Wang and Dr. Feng Wang.
+      </p>
+      <p style="font-size: 14px;">
+        My research interests focus on the <b>perception/decision/simulation</b> algorithms in autonomous driving scenarios. During Ph.D., my representive research lies in a series of algorithms for <b>LiDAR-based fully sparse detection</b>, supporting the super long-range perception and enhancing the driving safety. Currently, I am mainly focusing on driving simulation and work closely with Prof. Hongsheng Li @ MMLab.
+        <ul>
+          <li> <a href="https://scholar.google.com/citations?user=6ZzmkHEAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> </li>
+          <li> <a href="https://github.com/Abyssaledge">GitHub</a> </li>
+        </ul>
+      </p>
+      <h1 style="color:black;">Selected Work</h1>
+      <p>*: Equal Contribution; &dagger;: Corresponding Author</p>
+        
+
+      <table style="width:100%;border:0px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;font-size:14px;"><tbody>
+
+      <!-- FreeSim -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='trimgs_image'><img src="images/freesim_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2412.03566">FreeSim: Toward Free-viewpoint Camera Simulation in Driving Scenes</a></papertitle>
+          
+          <br><b>Lue Fan*</b>, Hao Zhang*, Qitai Wang, Hongsheng Li&dagger;, Zhaoxiang Zhang&dagger;.
+          <br>
+          <b><em>CVPR</em> 2025 &nbsp </b>
+          <br>
+          <a href="https://drive-sim.github.io/freesim">Project Page</a>
+          <p>
+            After FreeVS and FlexDrive, we propose <b>FreeSim</b>, a <b>generation-reconstruction</b> hybrid method for free-viewpoint camera simulation, taking the best of two worlds!
+          </p>
+        </td>
+      </tr>
+
+      <!-- FlexDrive -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='flexdrive_image'><img src="images/flexdrive.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2502.21093">FlexDrive: Toward Trajectory Flexibility in Driving Scene Reconstruction and
+            Rendering</a></papertitle>
+          
+          <br>Jingqiu Zhou*, <b>Lue Fan*</b>, Linjiang Huang, Xiaoyu Shi, Si Liu, Z. Zhang&dagger;, Hongsheng Li&dagger;.
+          <br>
+          <b><em>CVPR</em> 2025 &nbsp </b>
+          <br>
+            After FreeVS, we propose <b>FlexDrive</b>, a purely geometry-driven method for novel-trajectory camera simulation in driving scenes.
+          </p>
+        </td>
+      </tr>
+
+      <!-- FreeVS -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='trimgs_image'><img src="images/freevs_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2410.18079">FreeVS: Generative View Synthesis on Free
+            Driving Trajectory</a></papertitle>
+          
+          <br>Qitai Wang, <b>Lue Fan</b>, Yuqi Wang, Yuntao Chen&dagger;, Zhaoxiang Zhang&dagger;.
+          <br>
+          <b><em>ICLR</em> 2025 &nbsp </b>
+          <br>
+          <a href="https://freevs24.github.io/">Project Page</a>
+          <p>
+            <b>FreeVS</b> is the first method that supports high-quality <b>generative</b> view synthesis on <b>free driving trajectory</b>, which is a crucial feature for driving simulators.
+          </p>
+        </td>
+      </tr>
+
+      <!-- LAW -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='law_image'><img src="images/law_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.08481">Enhancing End-to-End Autonomous Driving with Latent World Model</a></papertitle>
+          
+          <br>Yingyan Li, <b>Lue Fan</b>, Jiawei He, Yuqi Wang, Yuntao Chen, Zhaoxiang Zhang, Tieniu Tan.
+          <br>
+          <b><em>ICLR</em> 2025 &nbsp </b>
+          <a href="https://github.com/BraveGroup/LAW">Code </a>
+          <p></p>
+          <p>
+            We propose a practical <b>LA</b>tent <b>W</b>orld Model (LAW) to enhance end-to-end autonomous driving in a self-supervised manner <b>without</b> leveraging time-consuming video generation, achieving strong and <b>realtime</b> performance in both <b>open-loop and close-loop</b> benchamrks. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- TrimGS -->
+      <tr onmouseout="law_stop()" onmouseover="law_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='trimgs_image'><img src="images/trimgs_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.07499">Trim 3D Gaussian Splatting for Accurate Geometry Representation</a></papertitle>
+          
+          <br><b>Lue Fan*</b>, Yuxue Yang*, Minxing Li, Hongsheng Li&dagger;, Zhaoxiang Zhang&dagger;.
+          <br>
+          <a href="https://github.com/YuxueYang1204/TrimGS">Code (fully released!)</a>,
+          <a href="https://trimgs.github.io/">Project Page</a>
+          <p>
+            We propose contribution-based trimming strategy to refine messy Gaussians to be geometrically accurate. This strategy has a potential to be integrated with any Gaussians!
+          </p>
+        </td>
+      </tr>
+
+
+      <!-- VoxelMamba -->
+      <tr onmouseout="voxelmamba_stop()" onmouseover="voxelmamba_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='voxelmamba_image'><img src="images/voxelmamba_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2406.10700">Voxel Mamba: Group-Free State Space Models for Point Cloud based 3D Object Detection</a></papertitle>
+          
+          <br>Guowen Zhang, <b>Lue Fan</b>, Chenhang He, Zhen Lei, Zhaoxiang Zhang, Lei Zhang.
+          <br>
+          <b><em>NeurIPS</em> 2024 &nbsp </b>
+          <a href="https://github.com/gwenzhang/Voxel-Mamba">Code</a>
+          <p></p>
+          <p>
+            The first voxel-based state space model for LiDAR-based 3D object detection in driving scenes, achiving state-of-the-art performance in <b>both Waymo and nuScene benchmarks</b>. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- Drive-WM -->
+      <tr onmouseout="wm_stop()" onmouseover="wm_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='wm_image'><img src="images/wm_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2311.17918">Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving</a></papertitle>
+          
+          <br>Yuqi Wang*, Jiawei He*, <b>Lue Fan*</b>, Hongxin Li*, Yuntao Chen&dagger;, Zhaoxiang Zhang&dagger;.
+          <br>
+          <b><em>CVPR</em>, 2024 &nbsp </b>
+          <br>
+          <a href="https://github.com/BraveGroup/Drive-WM">Code</a>
+          /
+          <a href="https://drive-wm.github.io">Project Page</a>
+          <p></p>
+          <p>
+            Drive-WM is the first multi-view world model for planning in autonomous driving. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- MixSup -->
+      <tr onmouseout="mixsup_stop()" onmouseover="mixsup_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='wm_image'><img src="images/mixsup_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2401.16305">MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection</a></papertitle>
+          
+          <br>Yuxue Yang, <b>Lue Fan&dagger;</b>, Zhaoxiang Zhang&dagger;.
+          <br>
+          <b><em>ICLR</em>, 2024 &nbsp </b>
+          <a href="https://github.com/BraveGroup/PointSAM-for-MixSup">Code</a>
+          <p></p>
+          <p>
+            MixSup achieves strong performance with a few accurate box labels and cheap cluster labels.  <b>PointSAM</b> is developed to generate cluster labels. It achieve on-par performance with SoTA 3D segmentation methods in nuScenes <b>without any 3D annotations</b>!
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSDv2 -->
+      <tr onmouseout="fsdv2_stop()" onmouseover="fsdv2_start()" height="200px">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsdv2_image'><img src="images/fsdv2_teaser.png" style="width:140%;height:100%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2308.03755">FSD V2: Improving Fully Sparse 3D Object Detection with Virtual Voxels</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSDv2 is an improved version of FSD, removing the handcrafted heuristics in FSD. FSDv2 achieves strong performance in Waymo, nuScenes, and Argoverse 2 dataset, and are fully open-sourced!
+          </p>
+        </td>
+      </tr>
+
+      <!-- CTRL -->
+      <tr onmouseout="ctrl_stop()" onmouseover="ctrl_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='ctrl_image'><img src="images/ctrl_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2304.12315v1">Once Detected, Never Lost: Surpassing Human Performance in Offline LiDAR based 3D Object Detection (CTRL)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Yuxue Yang, Yiming Mao, Feng Wang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <b><em>ICCV, <FONT COLOR="#FF0000">Oral</FONT></em>, 2023 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            CTRL is the first open-sourced LiDAR-based 3D object autolabeling system, surpassing the performance of human annotators!
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSF -->
+      <tr onmouseout="fsf_stop()" onmouseover="fsf_start()" height="200px">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsf_image'><img src="images/fsf_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2304.12310v2">Fully Sparse Fusion for 3D Object Detection (FSF)</a></papertitle>
+          
+          <br>Yingyan Li, <b>Lue Fan</b>, Yang Liu, Zehao Huang, Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang, Tieniu Tan
+          <br>
+          <a href="https://github.com/BraveGroup/FullySparseFusion">Code</a>
+          <p></p>
+          <p>
+            FSF explores multi-modal 3D object detection with fully sparse architecture by seamlessly integrating 2D instance segmentation and 3D instance segmentaion in a unified framework.
+          </p>
+        </td>
+      </tr>
+        
+
+      <!-- FSD++ -->
+      <tr onmouseout="fsdpp_stop()" onmouseover="fsdpp_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsdpp_image'><img src="images/fsdpp_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2301.02562">Super Sparse 3D Object Detection (FSD++)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Yuxue Yang, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>TPAMI</em>, 2023 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSD++ extends FSD into the multi-frame setting. In addition to the spatial sparsity, FSD++ emphaiszes temporal sparsity.
+          </p>
+        </td>
+      </tr>
+
+      <!-- FSD -->
+      <tr onmouseout="fsd_stop()" onmouseover="fsd_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='fsd_image'><img src="images/fsd_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2207.10035">Fully Sparse 3D Object Detection (FSD)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>NeurIPS</em>, 2022 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            FSD first proposes the concept of LiDAR-based <b><FONT COLOR="#FF0000">"fully sparse detection"</FONT></b>, achieving state-of-the-art performance in both conventional benchmark and long-range (>200m) LiDAR detection benchmark.
+          </p>
+        </td>
+      </tr>
+
+      <!-- SST -->
+      <tr onmouseout="sst_stop()" onmouseover="sst_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='sst_image'><img src="images/sst_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2112.06375">Embracing Single Stride 3D Object Detector with Sparse Transformer (SST)</a></papertitle>
+          
+          <br><b>Lue Fan</b>, Ziqi Pang, Tianyuan Zhang, Yu-Xiong Wang, Hang Zhao, Feng Wang, Naiyan Wang, Zhaoxiang Zhang
+          <br>
+          <b><em>CVPR</em>, 2022 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/SST">Code</a>
+          <p></p>
+          <p>
+            SST emphasize the <em>small object sizes</em> and <em>sparsity</em> of point clouds. Its sparse transformers enlight new backbones for outdoor LiDAR-based detection. 
+          </p>
+        </td>
+      </tr>
+
+      <!-- rangdet -->
+      <tr onmouseout="rangdet_stop()" onmouseover="rangdet_start()">
+        <td style="padding:0px;width:25%;vertical-align:top;border:0px;">
+          <div class="one">
+            <div class="two" id='rangedet_image'><img src="images/rangedet_teaser.png" style="width:140%;height:120%"></div>
+          </div>
+        </td>
+        <td style="padding-left:20px;width:75%;vertical-align:top;border:0px;">
+          <papertitle><a href="https://arxiv.org/abs/2103.10039">RangeDet: In Defense of Range View for Lidar-based 3D Object Detection</a></papertitle>
+          
+          <br><b>Lue Fan*</b>, Xuan Xiong*, Feng Wang, Naiyan Wang, Zhaoxiang Zhang.
+          <br>
+          <b><em>ICCV</em>, 2021 &nbsp </b>
+          <br>
+          <a href="https://github.com/TuSimple/RangeDet">Code</a>
+          <p></p>
+          <p>
+            RangeDet greatly narrows the performance gap between range view based LiDAR detection and voxel/BEV based LiDAR detection.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+      <h1 style="color:black;">Contact</h1>
+      <ul>
+        <li> Email: lue.fan@ia.ac.cn </li>
+      </ul>
+      
+      <!--
+      <p>
+        A filler image making this page look longer. 
+        <a href="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" target="_blank"><img src="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" alt="" data-canonical-src="https://placekitten.com/g/1200/800/" style="max-width:100%;"></a>
+      </p>
+      -->
+
+<!--       <footer class="site-footer">
+         <a href='https://dissertation-writingservice.com/'>Every end is a new beginning.</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=53afde0b53297eb53371cb1fba8bb4d0e6fd13e7'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/963478/t/9"></script>
+      </footer> -->
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <script type="text/javascript" src="https://www.free-counters.org/count/frj4"></script><br>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+
+    </section>
+
+  </body>
+</html>
