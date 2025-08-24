@@ -2,25 +2,31 @@
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
-// Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #159957 !default;
-$header-bg-color-secondary: #155799 !default;
+// Claude AI Brand Colors
+$claude-crail: #C15F3C !default;        // Primary warm rust-orange
+$claude-cloudy: #B1ADA1 !default;       // Light grey neutral
+$claude-pampas: #F4F3EE !default;       // Off-white neutral
+$claude-white: #FFFFFF !default;        // Pure white
 
-// Text
-$section-headings-color: #159957 !default;
-$body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
-$blockquote-text-color: #819198 !default;
+// Headers - Using Claude's warm rust-orange as primary
+$header-heading-color: $claude-white !default;
+$header-bg-color: $claude-crail !default;
+$header-bg-color-secondary: darken($claude-crail, 10%) !default;
 
-// Code
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
+// Text - Using Claude's warm and neutral tones
+$section-headings-color: $claude-crail !default;
+$body-text-color: darken($claude-cloudy, 20%) !default;
+$body-link-color: $claude-crail !default;
+$blockquote-text-color: $claude-cloudy !default;
 
-// Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
+// Code - Using Claude's neutral palette
+$code-bg-color: $claude-pampas !default;
+$code-text-color: darken($claude-cloudy, 15%) !default;
+
+// Borders - Using Claude's soft neutral tones
+$border-color: lighten($claude-cloudy, 15%) !default;
+$table-border-color: $claude-cloudy !default;
+$hr-border-color: lighten($claude-cloudy, 20%) !default;
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
