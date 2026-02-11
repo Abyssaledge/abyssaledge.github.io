@@ -608,3 +608,490 @@ h3.title {
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 	object-fit: contain;
 }
+
+/* ============================================
+   Enhanced Styling - 2026 Redesign
+   ============================================ */
+
+/* ---------- Color Variables ---------- */
+:root {
+	--primary-color: #155e75;
+	--primary-light: #0891b2;
+	--primary-dark: #164e63;
+	--accent-color: #0891b2;
+	--text-primary: #1e293b;
+	--text-secondary: #475569;
+	--text-muted: #64748b;
+	--bg-primary: #f7f7f7;
+	--bg-card: #f7f7f7;
+	--border-color: #e2e8f0;
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--gradient-primary: linear-gradient(135deg, #155e75 0%, #0891b2 100%);
+}
+
+/* ---------- Base Enhancements ---------- */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f7f7f7;
+	color: var(--text-primary);
+}
+
+/* ---------- Profile Photo ---------- */
+.profile-photo {
+	border-radius: 16px;
+	box-shadow: var(--shadow-lg);
+	border: 4px solid #ffffff;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+	transform: scale(1.02);
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Name & Title ---------- */
+div#toptitle h1 {
+	color: #1f2937;
+	font-weight: 600;
+	font-size: 2.2em;
+	letter-spacing: -0.02em;
+	margin-bottom: 0.1em;
+}
+
+h3.title {
+	font-weight: 500;
+	color: var(--text-secondary);
+	font-size: 1.1em;
+	margin-top: 0;
+	letter-spacing: 0.02em;
+}
+
+/* ---------- Social Links ---------- */
+.social-links {
+	display: flex;
+	gap: 10px;
+	margin-top: 12px;
+	flex-wrap: wrap;
+}
+
+.social-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	background: #efefef;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	color: var(--text-secondary);
+	font-size: 14px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	text-decoration: none;
+}
+
+.social-link:hover {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+	text-decoration: none;
+}
+
+.social-link svg {
+	width: 16px;
+	height: 16px;
+}
+
+/* ---------- Link Animation ---------- */
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	position: relative;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--primary-dark);
+	border-bottom: none;
+}
+
+.publication_title a,
+p a {
+	background-image: linear-gradient(var(--primary-color), var(--primary-color));
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: background-size 0.3s ease, color 0.2s ease;
+}
+
+.publication_title a:hover,
+p a:hover {
+	background-size: 100% 2px;
+}
+
+/* ---------- Section Headers ---------- */
+h2 {
+	color: var(--text-primary);
+	font-weight: 600;
+	font-size: 1.4em;
+	border-bottom: 2px solid var(--primary-color);
+	padding-bottom: 0.4em;
+	margin-top: 2em;
+	position: relative;
+}
+
+h2::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 60px;
+	height: 2px;
+	background: var(--accent-color);
+}
+
+h3 {
+	color: var(--text-secondary);
+	font-weight: 600;
+	font-size: 1.1em;
+	margin-top: 1.5em;
+	padding-left: 12px;
+	border-left: 3px solid var(--primary-color);
+}
+
+/* ---------- News Timeline ---------- */
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	display: block;
+	position: relative;
+	padding: 10px 14px;
+	margin-bottom: 8px;
+	background: #f0f0f0;
+	border-radius: 8px;
+	border-left: 3px solid var(--primary-color);
+	transition: all 0.2s ease;
+}
+
+ul li:hover {
+	background: #e8e8e8;
+	transform: translateX(4px);
+}
+
+ul li div.marker {
+	display: block;
+	line-height: 1.5;
+}
+
+ul li div.marker::before {
+	display: none;
+}
+
+/* News date styling */
+.news-date {
+	display: inline-block;
+	background: var(--primary-color);
+	color: white;
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 10px;
+	letter-spacing: 0.02em;
+}
+
+/* Award highlight - same as regular items */
+.news-award {
+	background: #f0f0f0;
+	border-left: 3px solid var(--primary-color);
+}
+
+.news-award:hover {
+	background: #e8e8e8;
+}
+
+.news-award .news-date {
+	background: var(--primary-color);
+}
+
+/* ---------- Publication Cards ---------- */
+.publication_container {
+	background: transparent;
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 16px;
+	border: none;
+	border-left: 4px solid transparent;
+	box-shadow: none;
+	transition: all 0.3s ease;
+}
+
+.publication_container:hover {
+	border-left-color: var(--primary-color);
+	box-shadow: var(--shadow-md);
+	transform: translateX(4px);
+}
+
+.publication_image {
+	margin-left: 0;
+	margin-right: 16px;
+	flex-shrink: 0;
+}
+
+.publication_image img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: var(--shadow-md);
+	transition: transform 0.3s ease;
+}
+
+.publication_image img:hover {
+	transform: scale(1.08);
+}
+
+.publication_image::after {
+	display: none;
+}
+
+.publication_title {
+	margin-left: 0;
+	flex: 1;
+	line-height: 1.5;
+}
+
+/* Venue Badges */
+.venue-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 6px;
+	letter-spacing: 0.02em;
+}
+
+.venue-cvpr { background: #dbeafe; color: #1e40af; }
+.venue-iccv { background: #dcfce7; color: #166534; }
+.venue-neurips { background: #fce7f3; color: #9d174d; }
+.venue-iclr { background: #fef3c7; color: #92400e; }
+.venue-tpami { background: #e0e7ff; color: #3730a3; }
+.venue-icra { background: #cffafe; color: #0e7490; }
+
+/* Oral Tag */
+.oral-tag {
+	display: inline-block;
+	background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+	color: white;
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-left: 6px;
+	animation: pulse-glow 2s infinite;
+}
+
+/* Hot Tag */
+.hot-tag {
+	display: inline-block;
+	background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+	color: white;
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-left: 6px;
+	animation: hot-glow 1.5s infinite;
+}
+
+.hot-tag::before {
+	content: '🔥 ';
+	font-size: 10px;
+}
+
+@keyframes pulse-glow {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+	50% { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+}
+
+@keyframes hot-glow {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+	50% { box-shadow: 0 0 0 6px rgba(249, 115, 22, 0); }
+}
+
+/* Paper links */
+.paper-links {
+	margin-top: 8px;
+}
+
+.paper-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 10px;
+	background: #efefef;
+	border: 1px solid var(--border-color);
+	border-radius: 6px;
+	font-size: 13px;
+	color: var(--text-secondary);
+	margin-right: 6px;
+	margin-top: 4px;
+	transition: all 0.2s ease;
+}
+
+.paper-link:hover {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+
+/* ---------- Recruitment Box ---------- */
+.recruitment-box {
+	background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+	border: 1px solid var(--primary-color);
+	border-radius: 12px;
+	padding: 20px 24px;
+	margin: 20px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.recruitment-box::before {
+	content: '🎯';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 48px;
+	opacity: 0.15;
+}
+
+.recruitment-box p {
+	color: var(--primary-dark);
+	font-weight: 500;
+	font-size: 15px;
+	margin: 0;
+	line-height: 1.6;
+}
+
+.recruitment-box strong {
+	color: var(--primary-color);
+}
+
+/* ---------- Show More Button ---------- */
+.show_button {
+	margin-top: 16px;
+	margin-left: 0;
+}
+
+.show_button a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 16px;
+	background: #efefef;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	color: var(--text-secondary);
+	font-size: 14px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.show_button a:hover {
+	background: var(--primary-color);
+	color: white;
+	border-color: var(--primary-color);
+}
+
+/* ---------- Footer ---------- */
+div#footer {
+	text-align: center;
+	border-top: 1px solid var(--border-color);
+	padding-top: 24px;
+	margin-top: 60px;
+	color: var(--text-muted);
+}
+
+div#footer-text {
+	float: none;
+	font-size: 14px;
+}
+
+/* ---------- Contact Info ---------- */
+.contact-info {
+	color: var(--text-secondary);
+	line-height: 1.8;
+}
+
+.contact-info .label {
+	color: var(--text-muted);
+	font-size: 13px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.publication_container {
+		flex-direction: column;
+	}
+
+	.publication_image {
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+
+	.publication_image img {
+		width: 100%;
+		height: auto;
+		max-height: 200px;
+	}
+
+	.social-links {
+		justify-content: center;
+	}
+
+	div#toptitle h1 {
+		font-size: 1.8em;
+	}
+
+	.recruitment-box::before {
+		display: none;
+	}
+}
+
+/* ---------- About Me Card ---------- */
+.about-card {
+	background: transparent;
+	border-radius: 12px;
+	padding: 20px;
+	border: none;
+	box-shadow: none;
+}
+
+/* ---------- Profile Table Enhancement ---------- */
+#layout-content > table {
+	background: transparent;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	border: none;
+}
