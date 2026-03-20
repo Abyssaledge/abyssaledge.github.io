@@ -893,6 +893,7 @@ ul li div.marker::before {
 .venue-iclr { background: #fef3c7; color: #92400e; }
 .venue-tpami { background: #e0e7ff; color: #3730a3; }
 .venue-icra { background: #cffafe; color: #0e7490; }
+.venue-arxiv { background: #f3e8ff; color: #6b21a8; }
 
 /* Oral Tag */
 .oral-tag {
