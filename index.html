@@ -17,7 +17,7 @@
         var showText = document.getElementById("showText");
         for (var i = 0; i < e.length; i++) {
             if (e[i].style.display == "none") {
-                e[i].style.display = "inline";
+                e[i].style.display = "";
                 showText.innerHTML = "[Show less]";
             } else {
                 e[i].style.display = "none";
@@ -113,12 +113,15 @@
 </div> -->
 
 <p style="color: #dc2626; font-weight: 500;">
-    Our NLPR lab is actively recruiting PhD students, interns, and postdocs in Autonomous Driving / Embodied AI / Coding Agent. Feel free to reach out: {lue.fan, zhaoxiang.zhang}@ia.ac.cn
+    Our NLPR lab is actively recruiting PhD students, interns, and postdocs in World Models / Autonomous Driving / Embodied AI / Coding Agent. Feel free to reach out: {lue.fan, zhaoxiang.zhang}@ia.ac.cn
 </p>
 
 <h2>News</h2>
 
 <ul>
+    <li>
+        <div class="marker"><span class="news-date">2026-05</span> Released <strong><a href="https://dexjoco.github.io/">DexJoCo</a></strong>, the first complex-task dexterous manipulation benchmark built entirely on human demonstrations!</div>
+    </li>
     <li class="news-award">
         <div class="marker"><span class="news-date">2026-05</span> 🏆 <strong>NeoVerse</strong> received <strong style="color: #dc2626;">Best Paper</strong> at the <strong><a href="https://videoworldmodel-workshop.github.io/">CVPR 2026 Video World Model Workshop</a></strong>!</div>
     </li>
@@ -134,14 +137,11 @@
     <li class="news-award">
         <div class="marker"><span class="news-date">2025-08</span> Received the <strong>Outstanding Doctoral Dissertation Award of CAS</strong> (中科院优秀博士学位论文)</div>
     </li>
-    <li>
+    <li class="news" style="display:none">
         <div class="marker"><span class="news-date">2025-07</span> Three papers accepted to <strong>ICCV 2025</strong></div>
     </li>
-    <li>
+    <li class="news" style="display:none">
         <div class="marker"><span class="news-date">2025-02</span> FreeSim and FlexDrive accepted by <strong>CVPR 2025</strong></div>
-    </li>
-    <li>
-        <div class="marker"><span class="news-date">2025-01</span> LAW accepted by <strong>ICLR 2025</strong></div>
     </li>
 </ul>
 
@@ -167,6 +167,21 @@ Recently, I focus on driving simulation technologies, including novel view synth
 
 <div class="publication_container">
     <div class="publication_image">
+        <img src="images/dexjoco_teaser.png">
+    </div>
+    <div class="publication_title">
+        DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo<span class="hot-tag">Hot</span><br/>
+        Hanwen Wang*, Weizhi Zhao*, Xiangyu Wang*, Siyuan Huang*, He Lin, Boyuan Zheng, Rongtao Xu, Gang Wang, Yao Mu, He Wang, <strong>Lue Fan<span class="corresponding">†</span></strong>(project lead), Hongsheng Li, Zhaoxiang Zhang<span class="corresponding">†</span>, Tieniu Tan<br/>
+        <div class="paper-links">
+            <a href="https://arxiv.org/abs/2605.16257" class="paper-link">Paper</a>
+            <a href="https://github.com/brave-eai/dexjoco" class="paper-link">Code</a>
+            <a href="https://dexjoco.github.io/" class="paper-link">Project</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication_container">
+    <div class="publication_image">
         <img src="images/dynvla_teaser.png">
     </div>
     <div class="publication_title">
@@ -184,7 +199,7 @@ Recently, I focus on driving simulation technologies, including novel view synth
         <img src="images/featurebench_teaser.png">
     </div>
     <div class="publication_title">
-        FeatureBench: Benchmarking Agentic Coding for Complex Feature Development<span class="hot-tag">Hot</span><br/>
+        FeatureBench: Benchmarking Agentic Coding for Complex Feature Development<br/>
         Qixing Zhou*, Jiacheng Zhang*, Haiyang Wang*, Rui Hao, Jiahe Wang, Minghao Han, Yuxue Yang, Shuzhe Wu, Feiyang Pan, <strong>Lue Fan<span class="corresponding">†</span></strong>, Dandan Tu, Zhaoxiang Zhang<span class="corresponding">†</span><br/>
         <span class="venue-badge venue-iclr">ICLR 2026</span><br/>
         <div class="paper-links">
