@@ -961,6 +961,38 @@ ul li div.marker::before {
 	50% { box-shadow: 0 0 0 6px rgba(249, 115, 22, 0); }
 }
 
+/* Live Demo Tag */
+a.demo-tag,
+a.demo-tag:hover,
+a.demo-tag:visited {
+	display: inline-block;
+	background: linear-gradient(135deg, #059669 0%, #047857 100%);
+	color: #fff !important;
+	padding: 2px 10px;
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-left: 6px;
+	text-decoration: none;
+	animation: demo-glow 1.5s infinite;
+}
+
+a.demo-tag:hover {
+	filter: brightness(1.1);
+}
+
+.demo-tag::before {
+	content: '▶ ';
+	font-size: 9px;
+}
+
+@keyframes demo-glow {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+	50% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+
 /* Best Paper Tag */
 .best-paper-tag {
 	display: inline-block;
