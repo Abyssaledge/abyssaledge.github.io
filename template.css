@@ -780,17 +780,17 @@ ul {
 ul li {
 	display: block;
 	position: relative;
-	padding: 10px 14px;
-	margin-bottom: 8px;
-	background: #f0f0f0;
-	border-radius: 8px;
-	border-left: 3px solid var(--primary-color);
-	transition: all 0.2s ease;
+	padding: 4px 0;
+	margin-bottom: 0;
+	background: transparent;
+	border-radius: 0;
+	border-left: none;
+	transition: none;
 }
 
 ul li:hover {
-	background: #e8e8e8;
-	transform: translateX(4px);
+	background: transparent;
+	transform: none;
 }
 
 ul li div.marker {
@@ -815,14 +815,14 @@ ul li div.marker::before {
 	letter-spacing: 0.02em;
 }
 
-/* Award highlight - same as regular items */
+/* Award highlight */
 .news-award {
-	background: #f0f0f0;
-	border-left: 3px solid var(--primary-color);
+	background: transparent;
+	border-left: none;
 }
 
 .news-award:hover {
-	background: #e8e8e8;
+	background: transparent;
 }
 
 .news-award .news-date {
