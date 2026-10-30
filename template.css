@@ -802,6 +802,11 @@ ul li div.marker::before {
 	display: none;
 }
 
+.news-list > li {
+	padding: 2px 0;
+	margin: 6px 0 0;
+}
+
 /* News date styling */
 .news-date {
 	display: inline-block;
